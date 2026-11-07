@@ -1,11 +1,13 @@
 # ⚡ DarkStore Pulse: Reverse-Engineering Quick-Commerce Warehouses
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/deploy?owner=velagapudirushi&repo=darkstore-pulse&branch=main&mainModule=app/streamlit_app.py)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://darkstore-pulse.streamlit.app/)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![DuckDB SQL](https://img.shields.io/badge/SQL-DuckDB%202.0-FFF000.svg)](https://duckdb.org/)
 [![LightGBM + SHAP](https://img.shields.io/badge/ML-LightGBM%20%2B%20TreeSHAP-10b981.svg)](https://lightgbm.readthedocs.io/)
 [![Pandera Validated](https://img.shields.io/badge/Data%20Quality-Pandera-purple.svg)](https://pandera.readthedocs.io/)
 [![Tests: 9 Passing](https://img.shields.io/badge/pytest-9%20passed-brightgreen.svg)](tests/)
+
+🚀 **Live Interactive Dashboard:** [**https://darkstore-pulse.streamlit.app/**](https://darkstore-pulse.streamlit.app/) *(Test the 2-Hour Stockout Risk Simulator + `TreeSHAP` waterfall, Supply-Truck Clock, Rain Heatmaps, and live `DuckDB` SQL Playground directly in your browser)*
 
 **DarkStore Pulse** is an end-to-end operational Data Science system inspired by viral reverse-engineering audits like [`McBroken`](https://mcbroken.com/). Instead of training another model on a static Kaggle CSV, this project tracks **public guest-mode quick-commerce storefronts** (Blinkit / Zepto—zero login required) joined with **live neighborhood rainfall** (`Open-Meteo`) across **8 Bengaluru pincodes × 20 everyday staples**.
 
