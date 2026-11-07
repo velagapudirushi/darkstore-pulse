@@ -1,0 +1,41 @@
+{
+  "total_in_stock_rows_evaluated": 42879,
+  "train_rows": 32159,
+  "chronological_test_rows": 10720,
+  "positive_2h_stockout_base_rate_pct": 6.54,
+  "cv_mean_roc_auc": 0.9137,
+  "cv_mean_pr_auc": 0.5188,
+  "holdout_roc_auc": 0.9278,
+  "naive_baseline_roc_auc": 0.5636,
+  "holdout_pr_auc": 0.5698,
+  "naive_baseline_pr_auc": 0.0786,
+  "pr_auc_lift_over_naive_x": 7.25,
+  "holdout_brier_score": 0.0404,
+  "top_5_shap_features": [
+    {
+      "feature": "eta_mins",
+      "label": "Current Delivery ETA (mins)",
+      "mean_abs_shap": 1.0887133681038226
+    },
+    {
+      "feature": "eta_rolling_3h",
+      "label": "3-Hour Rolling Average ETA",
+      "mean_abs_shap": 0.8962520878908204
+    },
+    {
+      "feature": "hours_since_last_restock",
+      "label": "Hours Elapsed Since Last Supply Truck",
+      "mean_abs_shap": 0.3527189869356261
+    },
+    {
+      "feature": "hour_of_day",
+      "label": "Hour of Day",
+      "mean_abs_shap": 0.34452471506621385
+    },
+    {
+      "feature": "item_id",
+      "label": "Specific SKU",
+      "mean_abs_shap": 0.2561209708424592
+    }
+  ]
+}

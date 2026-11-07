@@ -1,0 +1,165 @@
+city: "Bengaluru"
+platform: "blinkit_guest"
+polite_delay_seconds:
+  min: 3.5
+  max: 6.0
+
+pincodes:
+  - pincode: "560038"
+    neighborhood: "Indiranagar"
+    zone_type: "IT_Hub"
+    lat: 12.9784
+    lon: 77.6408
+    morning_truck_hour: 6
+    afternoon_truck_hour: 15
+  - pincode: "560095"
+    neighborhood: "Koramangala"
+    zone_type: "IT_Hub"
+    lat: 12.9352
+    lon: 77.6245
+    morning_truck_hour: 6
+    afternoon_truck_hour: 14
+  - pincode: "560102"
+    neighborhood: "HSR Layout"
+    zone_type: "IT_Hub"
+    lat: 12.9121
+    lon: 77.6446
+    morning_truck_hour: 5
+    afternoon_truck_hour: 15
+  - pincode: "560103"
+    neighborhood: "Bellandur"
+    zone_type: "IT_Hub"
+    lat: 12.9304
+    lon: 77.6784
+    morning_truck_hour: 6
+    afternoon_truck_hour: 16
+  - pincode: "560011"
+    neighborhood: "Jayanagar"
+    zone_type: "Family_Residential"
+    lat: 12.9308
+    lon: 77.5838
+    morning_truck_hour: 5
+    afternoon_truck_hour: 13
+  - pincode: "560003"
+    neighborhood: "Malleshwaram"
+    zone_type: "Family_Residential"
+    lat: 13.0031
+    lon: 77.5643
+    morning_truck_hour: 5
+    afternoon_truck_hour: 13
+  - pincode: "560078"
+    neighborhood: "JP Nagar"
+    zone_type: "Family_Residential"
+    lat: 12.9063
+    lon: 77.5857
+    morning_truck_hour: 5
+    afternoon_truck_hour: 14
+  - pincode: "560010"
+    neighborhood: "Rajajinagar"
+    zone_type: "Family_Residential"
+    lat: 12.9982
+    lon: 77.5530
+    morning_truck_hour: 5
+    afternoon_truck_hour: 14
+
+items:
+  - item_id: "milk_amul_500ml"
+    item_name: "Amul Taaza Toned Milk (500ml)"
+    category: "Dairy_Breakfast"
+    base_price_inr: 28.0
+    url_slug: "amul-taaza-toned-fresh-milk/prid/19512"
+  - item_id: "curd_nandini_400g"
+    item_name: "Nandini Fresh Curd (400g)"
+    category: "Dairy_Breakfast"
+    base_price_inr: 26.0
+    url_slug: "nandini-goodlife-curd/prid/24102"
+  - item_id: "eggs_white_6pc"
+    item_name: "Farm Fresh White Eggs (6 pcs)"
+    category: "Dairy_Breakfast"
+    base_price_inr: 52.0
+    url_slug: "farm-fresh-white-eggs-6-pieces/prid/31890"
+  - item_id: "bread_wheat_400g"
+    item_name: "Britannia 100% Whole Wheat Bread"
+    category: "Dairy_Breakfast"
+    base_price_inr: 55.0
+    url_slug: "britannia-100-whole-wheat-bread/prid/18304"
+  - item_id: "butter_amul_100g"
+    item_name: "Amul Pasteurised Butter (100g)"
+    category: "Dairy_Breakfast"
+    base_price_inr: 60.0
+    url_slug: "amul-pasteurised-butter-100g/prid/10491"
+  - item_id: "maggi_noodles_4pk"
+    item_name: "Maggi 2-Minute Masala Noodles (4 Pack)"
+    category: "LateNight_Snacks"
+    base_price_inr: 58.0
+    url_slug: "maggi-2-minute-masala-instant-noodles/prid/15203"
+  - item_id: "chips_lays_magic"
+    item_name: "Lay's India's Magic Masala Chips"
+    category: "LateNight_Snacks"
+    base_price_inr: 20.0
+    url_slug: "lays-indias-magic-masala-potato-chips/prid/11920"
+  - item_id: "coke_zero_750ml"
+    item_name: "Coca-Cola Zero Sugar (750ml)"
+    category: "LateNight_Snacks"
+    base_price_inr: 45.0
+    url_slug: "coca-cola-zero-sugar-soft-drink/prid/40219"
+  - item_id: "ice_cubes_1kg"
+    item_name: "Party Clean Ice Cubes (1kg)"
+    category: "LateNight_Snacks"
+    base_price_inr: 65.0
+    url_slug: "party-ice-cubes-1kg/prid/88412"
+  - item_id: "redbull_250ml"
+    item_name: "Red Bull Energy Drink (250ml)"
+    category: "LateNight_Snacks"
+    base_price_inr: 125.0
+    url_slug: "red-bull-energy-drink-250ml/prid/12904"
+  - item_id: "banana_robusta_500g"
+    item_name: "Robusta Bananas (500g)"
+    category: "Fresh_Produce"
+    base_price_inr: 39.0
+    url_slug: "banana-robusta/prid/10042"
+  - item_id: "coriander_100g"
+    item_name: "Fresh Coriander Leaves (100g)"
+    category: "Fresh_Produce"
+    base_price_inr: 18.0
+    url_slug: "coriander-leaves-bunch/prid/10088"
+  - item_id: "onion_1kg"
+    item_name: "Fresh Onion (1kg)"
+    category: "Fresh_Produce"
+    base_price_inr: 48.0
+    url_slug: "onion-1kg/prid/10011"
+  - item_id: "tomato_hybrid_500g"
+    item_name: "Hybrid Tomatoes (500g)"
+    category: "Fresh_Produce"
+    base_price_inr: 32.0
+    url_slug: "tomato-hybrid-500g/prid/10019"
+  - item_id: "green_chilli_100g"
+    item_name: "Green Chilli (100g)"
+    category: "Fresh_Produce"
+    base_price_inr: 15.0
+    url_slug: "green-chilli-100g/prid/10095"
+  - item_id: "water_bisleri_5l"
+    item_name: "Bisleri Packaged Drinking Water (5L)"
+    category: "Weather_Household"
+    base_price_inr: 70.0
+    url_slug: "bisleri-packaged-drinking-water-5l/prid/20391"
+  - item_id: "mosquito_refill_45ml"
+    item_name: "Good Knight Gold Flash Refill"
+    category: "Weather_Household"
+    base_price_inr: 79.0
+    url_slug: "good-knight-gold-flash-vapouriser-refill/prid/30912"
+  - item_id: "ginger_tea_250g"
+    item_name: "Tata Tea Gold Care Ginger & Cardamom (250g)"
+    category: "Weather_Household"
+    base_price_inr: 165.0
+    url_slug: "tata-tea-gold-care-250g/prid/44918"
+  - item_id: "umbrella_compact"
+    item_name: "Classic Auto-Open Rain Umbrella"
+    category: "Weather_Household"
+    base_price_inr: 299.0
+    url_slug: "classic-foldable-rain-umbrella/prid/99201"
+  - item_id: "ors_hydration_pack"
+    item_name: "Electral ORS Hydration Powder (Pack of 3)"
+    category: "Weather_Household"
+    base_price_inr: 66.0
+    url_slug: "electral-ors-powder-sachet/prid/55190"
