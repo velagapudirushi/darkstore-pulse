@@ -15,7 +15,7 @@ Using `DuckDB` analytical SQL window functions, `SciPy` hypothesis tests, and a 
 
 ---
 
-## 🐐 Explain It So Simple Even a Goat Can Understand It
+## simple understanding  
 
 Imagine there is a tiny, windowless grocery warehouse (**a "dark store"**) hidden down the street in your neighborhood. Nobody outside the company is allowed inside. You have no idea how many cartons of **Milk**, **Eggs**, or **Maggi** are sitting on its shelves, or what time their delivery truck comes to refill them.
 
