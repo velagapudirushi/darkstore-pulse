@@ -1,5 +1,6 @@
 # ⚡ DarkStore Pulse: Reverse-Engineering Quick-Commerce Warehouses
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/deploy?owner=velagapudirushi&repo=darkstore-pulse&branch=main&mainModule=app/streamlit_app.py)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![DuckDB SQL](https://img.shields.io/badge/SQL-DuckDB%202.0-FFF000.svg)](https://duckdb.org/)
 [![LightGBM + SHAP](https://img.shields.io/badge/ML-LightGBM%20%2B%20TreeSHAP-10b981.svg)](https://lightgbm.readthedocs.io/)
@@ -217,8 +218,8 @@ pytest -v
 ### 4. *(Optional)* Start Collecting Live Neighborhood Data Silently on macOS
 No account login or OTP needed—runs politely in headless guest mode once an hour (`08:00–23:00`) while your Mac is awake:
 ```bash
-# Install Chromium once for Playwright
-playwright install chromium
+# Install Playwright + Chromium once for local collection
+pip install playwright && playwright install chromium
 
 # Smoke-test config & live Open-Meteo weather connectivity
 python3 scripts/run_hourly_collector.py --dry-run
