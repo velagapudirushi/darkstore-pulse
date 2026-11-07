@@ -6,6 +6,7 @@ from dataclasses import dataclass
 import json
 from pathlib import Path
 from typing import Any
+import warnings
 
 import lightgbm as lgb
 import numpy as np
@@ -149,7 +150,9 @@ def train_and_evaluate_model(
     # 3. Compute exact TreeSHAP explanations on chronological test sample
     explainer = shap.TreeExplainer(final_model)
     sample_X = X_test.sample(n=min(1200, len(X_test)), random_state=42)
-    shap_vals = explainer.shap_values(sample_X)
+    with warnings.catch_warnings():
+        warnings.filterwarnings("ignore", message="LightGBM binary classifier with TreeExplainer")
+        shap_vals = explainer.shap_values(sample_X)
     if isinstance(shap_vals, list):
         shap_matrix = np.asarray(shap_vals[1])
     else:
@@ -208,7 +211,9 @@ def explain_single_prediction(
     X_single, _ = _prepare_features(single_row_df, category_levels=bundle.category_levels)
     prob = float(bundle.model.predict_proba(X_single)[0, 1])
 
-    raw_shap = bundle.explainer.shap_values(X_single)
+    with warnings.catch_warnings():
+        warnings.filterwarnings("ignore", message="LightGBM binary classifier with TreeExplainer")
+        raw_shap = bundle.explainer.shap_values(X_single)
     if isinstance(raw_shap, list):
         vec = np.asarray(raw_shap[1])[0]
     else:

@@ -192,7 +192,7 @@ def main() -> None:
                 height=380,
                 margin=dict(l=10, r=10, t=40, b=20),
             )
-            st.plotly_chart(fig_shap, use_container_width=True)
+            st.plotly_chart(fig_shap, width="stretch")
 
     # ------------------------------------------------------------------
     # TAB 2: Reverse-Engineered Warehouse Restock Schedule
@@ -203,7 +203,7 @@ def main() -> None:
             "Using `DuckDB` SQL `LAG(in_stock)`, every transition from **`Out of Stock` → `In Stock`** "
             "reveals when a replenishment truck unloaded inventory at each neighborhood warehouse."
         )
-        st.dataframe(restock_summary, use_container_width=True, hide_index=True)
+        st.dataframe(restock_summary, width="stretch", hide_index=True)
 
         fig_trucks = px.bar(
             restock_all,
@@ -217,7 +217,7 @@ def main() -> None:
             },
             title="Detected Replenishment Spikes Across All 8 Bengaluru Pincodes",
         )
-        st.plotly_chart(fig_trucks, use_container_width=True)
+        st.plotly_chart(fig_trucks, width="stretch")
 
     # ------------------------------------------------------------------
     # TAB 3: Statistical Hypothesis Tests & Behavioral Heatmaps
@@ -238,7 +238,7 @@ def main() -> None:
                 color_continuous_scale="Reds",
                 title="IT-Hub Pincodes: Stockout % by Hour & Category",
             )
-            st.plotly_chart(fig_it, use_container_width=True)
+            st.plotly_chart(fig_it, width="stretch")
 
         with col_b:
             fam_heat = sql_engine.get_hourly_heatmap("Family_Residential")
@@ -249,7 +249,7 @@ def main() -> None:
                 color_continuous_scale="Blues",
                 title="Family Residential Pincodes: Stockout % by Hour & Category",
             )
-            st.plotly_chart(fig_fam, use_container_width=True)
+            st.plotly_chart(fig_fam, width="stretch")
 
     # ------------------------------------------------------------------
     # TAB 4: Live DuckDB SQL Explorer
@@ -269,7 +269,7 @@ ORDER BY stockout_pct DESC;"""
         if st.button("Run DuckDB Query"):
             try:
                 out_df = DarkStoreWarehouseSQL(active_path).run_custom_query(user_sql)
-                st.dataframe(out_df, use_container_width=True)
+                st.dataframe(out_df, width="stretch")
             except Exception as exc:
                 st.error(f"Query rejected: {exc}")
 
